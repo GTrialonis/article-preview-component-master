@@ -91,8 +91,12 @@ a:hover.tooltips span {
     z-index: 999;
 }
 
-/* .facebook,
-.pinterest,
-.twitter {
-  margin-left: 0.3rem;
-} */
+/* On screens that are 600px or less, set the background color to white */
+@media screen and (max-width: 500px) {
+  body {
+    background-color: white;
+  }
+  .column {
+    width: 100%;
+  }
+}
