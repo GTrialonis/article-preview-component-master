@@ -1,55 +1,18 @@
-html {
-   position: relative;
-   height: 100%;
-}
 
-body {
-    height: 100%;
-    margin-bottom: 30px; /* Margin bottom by footer height */
-    font-family: 'Manrope', sans-serif;
-    /* margin: 2rem 2rem; */
-    background-color: hsl(210, 46%, 95%);
-}
 
-* {
-  box-sizing: border-box;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-  padding: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.card-text {
-  font-size: bold;
-}
-
-.drawers-image {
-  width: 105%;
-  height: 104%;
-}
-
-.card-body {
-  padding-bottom: 1rem;
-  padding-left: 2.2rem;
-}
-
-.row {
-  padding-bottom: 0.5rem;
-  /* padding-right: 2rem; */
+html, body {
+  font-family: 'Manrope', sans-serif;
+  background-color: hsl(210, 46%, 95%);
 }
 
 .container {
-  padding-left: 2.3rem;
+  position: absolute;
+  text-align: left;
+}
+
+.first {
+  font-family: 'Manrope';
+  font-size: bold;
 }
 
 .circular {
@@ -57,21 +20,12 @@ body {
 }
 
 .avatar {
-  width: 3rem
-}
-
-.contact-person {
-  font-size: 0.7rem;
-  padding-left: 0;
-  padding-right: 0;
+  width: 5rem
 }
 
 .share {
-  text-align: right;
-}
-
-.attribution {
   text-align: center;
+  font-size: 0.8rem;
 }
 
 a.tooltips {
@@ -110,16 +64,26 @@ a:hover.tooltips span {
     z-index: 999;
 }
 
-/* On screens that are 992px wide or less, go from four columns to two columns */
-@media all and (min-width: 1040px) and (max-width:401px) {
+
+@media all and (max-width: 500px) {
+  /*  */
+  img, .row.text {
+    max-width: 370px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-left: 2rem;
+  }
+  /* .row.text {
+    justify-content: center;
+    max-width: 370px;
+    height: auto;
+    display: flex;
+  }
+} */
+
+/* @media all and (min-width: 900px) {
   .column {
     width: 50%;
-  }
-}
-
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-/* @media screen and (max-width: 400px) {
-  .column {
-    width: 100%;
   }
 } */
