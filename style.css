@@ -1,32 +1,41 @@
 
 
 html, body {
+  margin: 10px;
   font-family: 'Manrope', sans-serif;
   background-color: hsl(210, 46%, 95%);
 }
 
-.container {
-  position: absolute;
-  text-align: left;
+.attribution {
+  background-color: hsl(210, 46%, 95%);
+}
+.column {
+  display: flex;
 }
 
-.first {
+img .card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+p.first-paragraph {
   font-family: 'Manrope';
-  font-size: bold;
+  font-size: bolder;
 }
 
 .circular {
-  border-radius: 100%;
+  border-radius: 80%;
 }
 
 .avatar {
-  width: 5rem
+  width: 3.5rem
 }
 
+.contact-person,
 .share {
-  text-align: center;
-  font-size: 0.8rem;
+  padding-left: 20px;
 }
+
 
 a.tooltips {
     position: relative;
@@ -63,27 +72,3 @@ a:hover.tooltips span {
     margin-left: -76px;
     z-index: 999;
 }
-
-
-@media all and (max-width: 500px) {
-  /*  */
-  img, .row.text {
-    max-width: 370px;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    padding-left: 2rem;
-  }
-  /* .row.text {
-    justify-content: center;
-    max-width: 370px;
-    height: auto;
-    display: flex;
-  }
-} */
-
-/* @media all and (min-width: 900px) {
-  .column {
-    width: 50%;
-  }
-} */
